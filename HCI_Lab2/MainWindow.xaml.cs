@@ -1,23 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace HCI_Lab2
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Application, which is shown in Figure 2, has many different functions.
+    /// At the top of the window - the edit field 
+    /// "Enter a Message", in which the user can enter a message that is
+    /// shown in the message box when the user presses the button
+    ///  "Show Message". Below - two buttons that fill the text box by the
+    ///  pecified default message or clear it. Below – the opening list that
+    ///  contains the Windows standard applications list. When the user
+    /// selects one of these programs, and then presses the "Run
+    /// Program", then the chosen program is performed. Below – two
+    /// groups of flags related to control elements that are located at the
+    /// top.Left set of flags "Enable Actions" makes available or not
+    /// each group of control elements that are located above.Right set
+    /// of flags "Show Actions" hide or not each group of control
+    /// elements.Button "Exit" of the dialog box is used to close the
+    /// application.
+    /// 1. Explore the main Windows control elements.
+    /// 2. Create an interface as shown in Fig.. 2.
+    /// 3. Add to the Default Message button the following code so that
+    /// the text box value looks like "Enter a message here".
+    /// 4. Add the following code to make available or unavailable(show
+    /// or hide) the control elements that are associated with performing
+    /// and choosing another application.
+    /// 5. Expand the code so that the user can enter own names of
+    /// programs that are needed to perform.
+    /// 6. Add to created interface performing of functions according to
+    /// the variant(Table 4)
+    /// 14. Change the flags in the group Enable Actions to the switches so
+    /// that control elements of groups Message or Program are
+    /// available.
     /// </summary>
     public partial class MainWindow : Window
     {
