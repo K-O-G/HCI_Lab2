@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_Lab2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Laboratory Work 2 ICIT_218a_SE Hordiienko" Height="400" Width="564">
+    <Grid Margin="0,0,0,0" Loaded="Grid_Loaded">
+        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="120" Click="exitButton_Click"  RenderTransformOrigin="0.5,0.448"/>
+        <GroupBox x:Name="ActionsGroupBox" Header="Enable actions" HorizontalAlignment="Left" Margin="33.5,235,0,0" VerticalAlignment="Top" Height="92.96" Width="203.993" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" >
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Center" >
+                <CheckBox x:Name="EnableProgActionsCheckBox" Content="Enable Program action" HorizontalAlignment="Left" Margin="10,40.04,0,0" VerticalAlignment="Top" Click="enableProgActions_Click" IsChecked="True"/>
+                <CheckBox x:Name="MessageActionsCheckBox" Content="Enable Message action" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True" Click="messageActions_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="ShowActionsGroupBox" Header="Show actions" HorizontalAlignment="Right" Height="93" Margin="0,235,34,0" VerticalAlignment="Top" Width="197" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" >
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Center">
+                <CheckBox x:Name="ShowMessAction" Content="Show Message Action" HorizontalAlignment="Left" Margin="10,0,0,32.902" VerticalAlignment="Bottom" IsChecked="True" Click="ShowMessAction_Click"/>
+                <CheckBox x:Name="ShowProgActions" Content="Show Program Action" HorizontalAlignment="Left" Margin="10,30.098,0,0" VerticalAlignment="Top" IsChecked="True" Click="ShowProgActions_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="ProgramGroupBox" Header="Run a program" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="85" Width="497" Margin="0,91.05,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}" >
+            <Grid x:Name="ProgramGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3,0,-2,1" >
+                <Button x:Name="ProgExecuterButton" Content="Run a program" HorizontalAlignment="Right" Margin="0,0,30,0" VerticalAlignment="Center" Width="120" Click="progExecuterButton_Click"  Height="19"/>
+                <ComboBox x:Name="ProgramProcessComboBox" Width="185"  Height="21" Margin="119,21,171,19" HorizontalAlignment="Center"/>
+                <Label x:Name="Label1" Content="Run a program" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Height="25.96" Width="89.377"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="ControlGroupBoxes" Header="Group's control" HorizontalAlignment="Center" VerticalAlignment="Top" Height="53.96" Width="280.467" HorizontalContentAlignment="Center" Margin="0,175,0,0" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" >
+            <Grid x:Name="GroupsControl" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <CheckBox x:Name="EnableGroupsActions" Content="Enable Acttion Box are available " HorizontalAlignment="Left" Margin="10,12.95,0,0" VerticalAlignment="Top"  IsChecked="True"  Click="Enable_groups_actions_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="EnterMessageGroupBox" Header="Message content" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="85" Width="497" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}"  >
+            <Grid x:Name="MessageGrid" >
+                <Label x:Name="MessageLabel" Content="Enter a message" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="100.395"/>
+                <Button x:Name="ShowMessageButton" Content="Show message" HorizontalAlignment="Right" Margin="0,7,40,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Click="button_Click"/>
+                <Button x:Name="ClearButtonButton" Content="Clear Message" HorizontalAlignment="Right" Margin="0,0,40,0" VerticalAlignment="Bottom" Width="120" Click="clButton_Click"/>
+                <Button x:Name="DefaultButton" Content="Default Message" HorizontalAlignment="Center" Margin="191,0,174,0" VerticalAlignment="Bottom" Width="120" Click="button4_Click"/>
+                <TextBox x:Name="MessageTextBox" HorizontalAlignment="Left" Height="23" Margin="125,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+            </Grid>
+        </GroupBox>
+
+
     </Grid>
 </Window>
