@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_Lab2"
         mc:Ignorable="d"
-        Title="Laboratory Work 2 ICIT_218a_SE Hordiienko" Height="400" Width="564">
+        Title="Laboratory Work 2 ICIT-218a-SE Hordiienko" Height="400" Width="564">
     <Grid Margin="0,0,0,0" Loaded="Grid_Loaded">
         <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="120" Click="exitButton_Click"  RenderTransformOrigin="0.5,0.448"/>
         <GroupBox x:Name="ActionsGroupBox" Header="Enable actions" HorizontalAlignment="Left" Margin="33.5,235,0,0" VerticalAlignment="Top" Height="92.96" Width="203.993" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" >
