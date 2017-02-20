@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows;
+using System.Windows.Media;
 
 namespace HCI_Lab2
 {
@@ -43,8 +44,16 @@ namespace HCI_Lab2
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if (MessageTextBox.Text == "") MessageBox.Show("Message Text Box is empry.");
-            else MessageBox.Show(MessageTextBox.Text);
+            if (MessageTextBox.Text == "")
+            {
+                MessageBox.Show("Message Text Box is empty.","Error",MessageBoxButton.OK,MessageBoxImage.Exclamation);
+                MessageTextBox.BorderBrush = Brushes.Red;
+            }
+            else
+            {
+                MessageBox.Show(MessageTextBox.Text);
+                MessageTextBox.BorderBrush = Brushes.LightGray;
+            }
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -99,14 +108,16 @@ namespace HCI_Lab2
                         }
                     default:
                         {
-                            MessageBox.Show("Combo Box is empty.");
+                            MessageBox.Show("Combo Box is empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                            ProgramProcessComboBox.BorderBrush = Brushes.Red;
                             break;
                         }
                 }
             }
             catch (Exception exception)
             {
-                MessageBox.Show("Combo Box is empty.");
+                MessageBox.Show("Combo Box is empty.","Error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                ProgramProcessComboBox.BorderBrush = Brushes.Red;
             }
             
 
